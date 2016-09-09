@@ -1,0 +1,123 @@
+
+body{
+  position: relative;
+  font-family: 'Microsoft Yahei','Source Sans Pro',sans-serif;
+}
+*:focus {outline: none;} 
+.onez-dialog{
+  position: relative;
+  z-index: 99;
+  background: #e9ecf6;
+  visibility: hidden;
+  header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9;
+    height: 60px;
+    background: #e7eaf6;
+    border-bottom: 1px solid #d3d6e1;
+    p.intro{
+      padding: 0 15px;
+      line-height: 60px;
+    }
+  }
+  footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9;
+    height: 50px;
+    background: #e7eaf6;
+    border-top: 1px solid #d3d6e1;
+    p.intro{
+      padding: 0 15px;
+      line-height: 50px;
+    }
+  }
+  section{
+    position: absolute;
+    top: 60px;
+    bottom: 50px;
+    right: 0;
+    width: 100%;
+    z-index: 8;
+    aside{
+      position: absolute;
+      top:0;
+      width:280px;
+      z-index: 7;
+      &.onez-left{
+        left:0;
+      }
+      &.onez-right{
+        right:0;
+      }
+    }
+    .onez-body{
+      position: absolute;
+      left: 280px;
+      z-index: 6;
+    }
+  }
+  .onez-auto{
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  .onez-toolbar{
+    border-top: 1px solid #d7dae2;
+  }
+  .onez-inputbox{
+    position: relative;
+    height: 100px;
+    background: #e9ecf6;
+    textarea{
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 5px;
+      border: 0;
+      background: #e9ecf6;
+      resize: none;
+      &.disabled{
+        color:#999;
+      }
+    }
+  }
+  .onez-btns{
+    padding-right: 5px;
+    .pull-left{
+      padding-left: 15px;
+      line-height: 40px;
+    }
+    button{
+      margin: 5px 0px;
+    }
+    .btn-group{
+      button{
+        margin: 5px 0px;
+      }
+    }
+  }
+  #showbox{
+    .msg-item{
+      padding:5px;
+      .msg-item-usr{
+        line-height: 1.5;
+        color:#008040;
+      }
+      .msg-item-message{
+        padding-left: 15px;
+      }
+      &.msg-pos-you{
+        .msg-item-usr{
+          color:#0000ff;
+        }
+      }
+    }
+  }
+}
